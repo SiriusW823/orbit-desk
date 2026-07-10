@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Orbit Desk is a focused new tab dashboard with a timer, persistent priorities, useful links, and a live clock." />
+    <meta name="theme-color" content="#08100f" />
+    <title>Orbit Desk — Personal Mission Control</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Orbit Desk home"><span class="brand-mark" aria-hidden="true">OD</span><span>Orbit Desk</span></a>
+        <p class="status"><span aria-hidden="true"></span> Systems ready</p>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal mission control</p>
+          <h1><span id="greeting">Good day</span>.<br /><em>What will you launch?</em></h1>
+          <form class="search" action="https://duckduckgo.com/" method="get">
+            <label for="search">Search the web</label>
+            <div><input id="search" name="q" placeholder="Search the universe…" autocomplete="off" /><button type="submit">Search <span aria-hidden="true">↗</span></button></div>
+          </form>
+        </div>
+        <div class="clock-panel" aria-label="Current local time">
+          <p>Local orbit</p><time id="clock">--:--</time><span id="date">Loading date</span>
+          <div class="orbit" aria-hidden="true"><i></i></div>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Productivity dashboard">
+        <article class="panel focus-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Focus signal</p><h2>One clear window</h2></div><span class="panel-index">01</span></div>
+          <div class="timer" id="timer" aria-live="polite">25:00</div>
+          <div class="timer-actions"><button class="primary" id="timer-toggle">Start focus</button><button class="quiet" id="timer-reset">Reset</button></div>
+          <div class="progress" aria-hidden="true"><span id="timer-progress"></span></div>
+        </article>
+
+        <article class="panel tasks-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Flight plan</p><h2>Today&apos;s priorities</h2></div><span class="task-count" id="task-count">0/0</span></div>
+          <form class="task-form" id="task-form"><label for="new-task">Add a priority</label><input id="new-task" placeholder="Add the next small step…" /><button type="submit" aria-label="Add task">+</button></form>
+          <ul class="task-list" id="task-list"></ul>
+        </article>
+      </section>
+
+      <section class="links-section">
+        <div class="section-title"><div><p class="eyebrow">Launch pads</p><h2>Go somewhere useful</h2></div></div>
+        <div class="link-grid">
+          <a href="https://github.com"><span class="link-number">01</span><i aria-hidden="true">↗</i><strong>GitHub</strong><small>Ship code</small></a>
+          <a href="https://hackclub.com"><span class="link-number">02</span><i aria-hidden="true">↗</i><strong>Hack Club</strong><small>Build together</small></a>
+          <a href="https://stardance.hackclub.com/home"><span class="link-number">03</span><i aria-hidden="true">↗</i><strong>Stardance</strong><small>Log progress</small></a>
+          <a href="https://developer.mozilla.org"><span class="link-number">04</span><i aria-hidden="true">↗</i><strong>MDN</strong><small>Look it up</small></a>
+        </div>
+      </section>
+      <footer><p>Built for deliberate days and curious nights.</p><span>Orbit Desk · v1.0</span></footer>
+    </main>
+  </body>
+</html>
+
