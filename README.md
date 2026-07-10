@@ -18,6 +18,11 @@ New tabs are opened dozens of times a day. I wanted each one to offer a small re
 
 Open `index.html` in a browser, or serve the folder with any static server.
 
+## Links
+
+- Live site: https://siriusw823.github.io/orbit-desk/
+- Source: https://github.com/SiriusW823/orbit-desk
+
 ## How it works
 
 This project uses only HTML, CSS, and JavaScript. The focus timer is driven by a one-second interval. Priorities use `localStorage`, so they survive reloads without an account or server. Everything else is deliberately lightweight and works without an API key.
@@ -27,8 +32,8 @@ This project uses only HTML, CSS, and JavaScript. The focus timer is driven by a
 - [x] Custom UI built with HTML, CSS, and JavaScript
 - [x] Real interactive features: timer, persistent tasks, live clock, and search
 - [x] Responsive layout and accessible controls
-- [ ] Public GitHub repository
-- [ ] Deployed production URL
+- [x] Public GitHub repository
+- [x] Deployed production URL
 - [ ] Stardance devlogs and final project submission
 
 ## License
